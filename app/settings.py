@@ -1,22 +1,17 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 from datetime import timedelta
-
-load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-8ze77h!8$yx-3rf-wabsqdbcff)3#@*^yi3%yivt-($$aaa4w^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG='True'
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
